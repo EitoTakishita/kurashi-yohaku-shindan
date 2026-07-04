@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01",
+  "description": "世帯人数ごとの基準生活費（月額・円）",
+  "note": "総務省家計調査（2024年）を参考に算出",
+  "baselines": [
+    {
+      "householdSize": 1,
+      "food": 40000,
+      "utilities": 12000,
+      "communication": 7000,
+      "dailyGoods": 6000,
+      "medical": 5000,
+      "transportation": 8000,
+      "entertainment": 15000,
+      "clothing": 5000,
+      "education": 0,
+      "other": 10000,
+      "total": 108000
+    },
+    {
+      "householdSize": 2,
+      "food": 65000,
+      "utilities": 18000,
+      "communication": 12000,
+      "dailyGoods": 10000,
+      "medical": 8000,
+      "transportation": 12000,
+      "entertainment": 25000,
+      "clothing": 10000,
+      "education": 0,
+      "other": 15000,
+      "total": 175000
+    },
+    {
+      "householdSize": 3,
+      "food": 80000,
+      "utilities": 22000,
+      "communication": 15000,
+      "dailyGoods": 12000,
+      "medical": 10000,
+      "transportation": 15000,
+      "entertainment": 30000,
+      "clothing": 15000,
+      "education": 20000,
+      "other": 20000,
+      "total": 239000
+    },
+    {
+      "householdSize": 4,
+      "food": 95000,
+      "utilities": 25000,
+      "communication": 18000,
+      "dailyGoods": 15000,
+      "medical": 12000,
+      "transportation": 18000,
+      "entertainment": 35000,
+      "clothing": 20000,
+      "education": 35000,
+      "other": 25000,
+      "total": 298000
+    },
+    {
+      "householdSize": 5,
+      "food": 110000,
+      "utilities": 28000,
+      "communication": 20000,
+      "dailyGoods": 18000,
+      "medical": 15000,
+      "transportation": 20000,
+      "entertainment": 40000,
+      "clothing": 25000,
+      "education": 50000,
+      "other": 30000,
+      "total": 356000
+    }
+  ],
+  "adjustmentFactors": {
+    "hasCar": {
+      "transportation": 1.8,
+      "insurance": 8000,
+      "maintenance": 10000,
+      "note": "車所有による追加費用"
+    },
+    "hasChild": {
+      "food": 1.15,
+      "dailyGoods": 1.2,
+      "education": 1.5,
+      "note": "子どもありによる費用増加"
+    },
+    "diningOutFrequency": {
+      "low": {
+        "food": 0.95,
+        "entertainment": 0.9
+      },
+      "medium": {
+        "food": 1.0,
+        "entertainment": 1.0
+      },
+      "high": {
+        "food": 1.15,
+        "entertainment": 1.2
+      }
+    }
+  }
+}

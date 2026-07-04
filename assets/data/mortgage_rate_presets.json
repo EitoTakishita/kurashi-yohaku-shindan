@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01",
+  "description": "住宅ローン金利のプリセット",
+  "note": "2025年1月時点の市場金利を参考",
+  "presets": [
+    {
+      "id": "variable_low",
+      "name": "変動金利（低金利）",
+      "rate": 0.4,
+      "type": "variable",
+      "description": "ネット銀行などの優遇金利適用時",
+      "riskNote": "金利上昇リスクあり"
+    },
+    {
+      "id": "variable_standard",
+      "name": "変動金利（標準）",
+      "rate": 0.6,
+      "type": "variable",
+      "description": "一般的な変動金利",
+      "riskNote": "金利上昇リスクあり"
+    },
+    {
+      "id": "fixed_10y",
+      "name": "固定10年",
+      "rate": 1.2,
+      "type": "fixed",
+      "description": "当初10年固定金利",
+      "riskNote": "10年後に金利見直し"
+    },
+    {
+      "id": "fixed_35y",
+      "name": "全期間固定（フラット35）",
+      "rate": 1.8,
+      "type": "fixed",
+      "description": "フラット35相当",
+      "riskNote": "金利変動リスクなし"
+    }
+  ],
+  "stressTestRates": {
+    "normal": 1.0,
+    "moderate": 2.0,
+    "high": 3.0,
+    "description": "金利上昇時のストレステスト用"
+  },
+  "defaultRate": 0.6
+}

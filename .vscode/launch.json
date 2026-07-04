@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "くらし余白診断",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "くらし余白診断 (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "くらし余白診断 (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}

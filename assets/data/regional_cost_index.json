@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01",
+  "description": "地域別の生活費係数",
+  "note": "都市部・地方の物価差を反映",
+  "regions": [
+    {
+      "id": "low",
+      "name": "地方・郊外",
+      "costIndex": 0.90,
+      "description": "地方都市や郊外エリア",
+      "examples": [
+        "地方都市",
+        "郊外住宅地"
+      ],
+      "categoryAdjustments": {
+        "food": 0.92,
+        "utilities": 0.95,
+        "transportation": 0.85,
+        "entertainment": 0.88
+      }
+    },
+    {
+      "id": "medium",
+      "name": "標準",
+      "costIndex": 1.0,
+      "description": "一般的な都市部",
+      "examples": [
+        "中核都市",
+        "県庁所在地"
+      ],
+      "categoryAdjustments": {
+        "food": 1.0,
+        "utilities": 1.0,
+        "transportation": 1.0,
+        "entertainment": 1.0
+      }
+    },
+    {
+      "id": "high",
+      "name": "都市部・高コスト",
+      "costIndex": 1.15,
+      "description": "大都市圏・都心部",
+      "examples": [
+        "東京23区",
+        "大阪市内",
+        "名古屋市内"
+      ],
+      "categoryAdjustments": {
+        "food": 1.12,
+        "utilities": 1.08,
+        "transportation": 1.0,
+        "entertainment": 1.20
+      }
+    }
+  ]
+}

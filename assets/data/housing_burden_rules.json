@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01",
+  "description": "住居費負担率の基準値",
+  "note": "フラット35基準および実態調査に基づく",
+  "rentBurdenRatio": {
+    "safe": {
+      "ratio": 0.25,
+      "description": "安全寄り",
+      "comment": "貯蓄や余裕を重視する場合"
+    },
+    "standard": {
+      "ratio": 0.28,
+      "description": "標準",
+      "comment": "バランスの取れた水準"
+    },
+    "limit": {
+      "ratio": 0.33,
+      "description": "上限寄り",
+      "comment": "住環境を優先する場合（余裕は小さめ）"
+    }
+  },
+  "mortgagePaymentRatio": {
+    "審査基準": {
+      "年収400万未満": {
+        "maxRatio": 0.30,
+        "description": "フラット35の審査基準",
+        "source": "住宅金融支援機構"
+      },
+      "年収400万以上": {
+        "maxRatio": 0.35,
+        "description": "フラット35の審査基準",
+        "source": "住宅金融支援機構"
+      }
+    },
+    "生活推奨": {
+      "conservative": {
+        "ratio": 0.20,
+        "description": "余裕重視",
+        "comment": "貯蓄や生活費を十分確保したい場合"
+      },
+      "standard": {
+        "ratio": 0.25,
+        "description": "標準",
+        "comment": "実態調査で最も多い水準（15-20%）に近い"
+      },
+      "aggressive": {
+        "ratio": 0.30,
+        "description": "住宅優先",
+        "comment": "審査基準に近いが生活は工夫が必要"
+      }
+    }
+  },
+  "savingsTargetRatio": {
+    "low": {
+      "ratio": 0.05,
+      "description": "最低限"
+    },
+    "medium": {
+      "ratio": 0.10,
+      "description": "標準"
+    },
+    "high": {
+      "ratio": 0.15,
+      "description": "しっかり貯める"
+    }
+  },
+  "safetyBuffer": {
+    "amount": 10000,
+    "description": "予備費・安全バッファ（月額）"
+  }
+}
